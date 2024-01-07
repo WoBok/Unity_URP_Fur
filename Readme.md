@@ -1,3 +1,4 @@
+目标：能在VR设备下使用毛发，在可接受的效果上，达到理想的性能。  
 ### Preview
 ![](./ReadmePictures/Preview.png)  
 
