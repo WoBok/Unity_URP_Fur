@@ -7,8 +7,8 @@ Shader "Fur/Fur Base" {
         [Header(Diffuse)]
         _FrontLightColor ("Front Light Color", Color) = (1, 1, 1, 1)
         _BackLightColor ("Back Light Color", Color) = (1, 1, 1, 1)
-        _DiffuseFrontIntensity ("Diffuse Front Intensity", float) = 0.7
-        _DiffuseBackIntensity ("Diffuse Back Intensity", float) = 0.3
+        _DiffuseFrontIntensity ("Diffuse Front Intensity", float) = 2
+        _DiffuseBackIntensity ("Diffuse Back Intensity", float) = 1.5
 
         [Header(Specular)]
         _SpecularColor ("Specular Color", Color) = (1, 1, 1, 1)

@@ -7,8 +7,8 @@ Shader "Fur/Fur Render" {
         [Header(Diffuse)]
         _FrontLightColor ("Front Light Color", Color) = (1, 1, 1, 1)
         _BackLightColor ("Back Light Color", Color) = (1, 1, 1, 1)
-        _DiffuseFrontIntensity ("Diffuse Front Intensity", float) = 0.7
-        _DiffuseBackIntensity ("Diffuse Back Intensity", float) = 0.3
+        _DiffuseFrontIntensity ("Diffuse Front Intensity", float) = 2
+        _DiffuseBackIntensity ("Diffuse Back Intensity", float) = 1.5
 
         [Header(Specular)]
         _SpecularColor ("Specular Color", Color) = (1, 1, 1, 1)
@@ -21,16 +21,16 @@ Shader "Fur/Fur Render" {
 
         [Header(Fur)]
         _FurNoiseTex ("Fur Noise", 2D) = "white" { }
-        _FurLength ("Fur Length", Range(0.0, 1)) = 0.5
-        _FurDensity ("Fur Density", Range(0, 2)) = 0.11
-        _FurThinness ("Fur Thinness", Range(0.01, 10)) = 1
-        _FurShading ("Fur Shading", Range(0.0, 1)) = 0.25
-        _FurForce ("Fur Force", Vector) = (0, 0, 0, 0)
+        _FurLength ("Fur Length", Range(0.0, 1)) = 0.05
+        _FurDensity ("Fur Density", Range(0, 2)) = 0.75
+        _FurThinness ("Fur Thinness", Range(0.01, 10)) = 7.5
+        _FurShading ("Fur Shading", Range(0.0, 1)) = 0.15
+        _FurForce ("Fur Force", Vector) = (-0.2, -0.5, 0, 0)
 
         [Header(Other Setting)]
-        [Enum(UnityEngine.Rendering.BlendMode)]_SrcBlend ("SrcBlend   [One  SrcAlpha]", float) = 1
-        [Enum(UnityEngine.Rendering.BlendMode)]_DstBlend ("DstBlend   [Zero  OneMinusSrcAlpha]", float) = 0
-        [Enum(On, 1, Off, 0)]_ZWrite ("ZWrite        [On  Off]", float) = 1
+        [Enum(UnityEngine.Rendering.BlendMode)]_SrcBlend ("SrcBlend   [One  SrcAlpha]", float) = 5
+        [Enum(UnityEngine.Rendering.BlendMode)]_DstBlend ("DstBlend   [Zero  OneMinusSrcAlpha]", float) = 10
+        [Enum(On, 1, Off, 0)]_ZWrite ("ZWrite        [On  Off]", float) = 0
     }
 
     SubShader {
